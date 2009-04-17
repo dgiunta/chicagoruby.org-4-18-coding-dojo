@@ -1,0 +1,44 @@
+h1. Coding Dojo Bowling Kata
+
+This is the starter code for use with a coding dojo. It has a cucumber feature specification for scoring a game of bowling, as well as the step definitions already written out to make the feature executable.
+
+Also, a game.rb file is setup and ready to be spec'd with RSpec, and the basic wiring to make RSpec and Cucumber see that file is already done as well.
+
+h2. Usage
+
+First you'll need to install the appropriate gems:
+sudo gem install cucumber rspec syntax hoe
+
+And, it'd probably be a good idea to have the cucumber and rspec textmate bundles installed as well:
+http://github.com/dchelimsky/rspec-tmbundle
+http://github.com/bmabey/cucumber-tmbundle
+
+Then, just to make sure everything's installed properly, from the root of the downloaded code run: <code>cucumber features</code> to see the cucumber specs run. You should see a bunch of errors talking about an <code>uninitialized constant Bowling</code>. That's expected.
+
+To make sure the RSpec is working properly, go into <code>spec/bowling/game_spec.rb</code> and add the following:
+
+<pre>
+module Bowling
+  describe Game do
+  end
+end
+</pre>
+
+And then in <code>lib/bowling/game.rb</code> add the following:
+<pre>
+module Bowling
+  class Game
+  end
+end
+</pre>
+
+Then from the command line, run: <code>spec spec --color</code> and you should see output like:
+<pre>
+Finished in 0.006175 seconds
+
+0 examples, 0 failures
+</pre>
+
+If you've installed the rspec textmate bundle, you can run the specs right from textmate by opening the <code>game_spec.rb</code> file and hitting Command-R which should open a new window with a green bar across the top with 0 examples, 0 failures in the upper right.
+
+If you run the cucumber features one more time you should now see errors about an undefined method "hit". That's exactly what we want to see. And now your machine is setup properly to use cucumber and rspec for a coding dojo.
