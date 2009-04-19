@@ -6,6 +6,7 @@ Given /^I have rolled ([\d, ]+)$/ do |rolls|
 end
 
 When /^the game is over$/ do
+
 end
 
 Then /^the score should be (\d+)$/ do |score|
