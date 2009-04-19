@@ -1,3 +1,13 @@
+h1. Did you attend the 4/18 ChicagoRuby.org Coding Dojo presentation?
+
+The code in the master branch of this repository is the "bare" code that we started with. If you want to start from scratch again, the master branch is where you want to start.
+
+However, some folks asked that I make the code at the place we left off at available as well. That can be found in the <code>4-18-dojo-group_1</code> branch of this repository.
+
+Also, I've gone and completed the whole kata, with specs and completed code if you want to take a look at that as well. That is in the <code>solution</code> branch.
+
+Good luck!
+
 h1. Coding Dojo Bowling Kata
 
 This is the starter code for use with a coding dojo. It has a cucumber feature specification for scoring a game of bowling, as well as the step definitions already written out to make the feature executable.
