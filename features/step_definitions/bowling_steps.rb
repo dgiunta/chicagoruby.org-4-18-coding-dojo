@@ -1,7 +1,7 @@
 Given /^I have rolled ([\d, ]+)$/ do |rolls|
   @game = Bowling::Game.new
   rolls.split(",").each do |pins|
-    @game.hit(pins.to_i)
+    @game.roll(pins.to_i)
   end
 end
 

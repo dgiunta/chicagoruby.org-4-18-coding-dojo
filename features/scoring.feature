@@ -1,7 +1,7 @@
 Feature: scoring a game
   In order to see how well I've done
   As a bowler
-  I want get the score of the game
+  I want to get the score of the game
 
   Scenario Outline: scoring
     Given I have rolled <rolls>
